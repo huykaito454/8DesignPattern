@@ -14,8 +14,8 @@ public class InterpreterEngineContext {
         return (num1 - num2);
     }
     private String[] interpret(String input){
-        String str = input.replaceAll("[^0-9]"," ");
-        str = str.replaceAll("()+"," ".trim());
+        String str = input.replaceAll("[^0-9]", " ");
+        str = str.replaceAll("( )+", " ").trim();
         return str.split(" ");
     }
 
